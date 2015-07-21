@@ -14,7 +14,7 @@ module.exports = {
       platformName: "Android",
       //platformVersion: "4.4",
       deviceName: "device",
-      app: "/Users/ammar1/Downloads/org.mightyfrog.android.simplenotepad-1.8.4-APK4Fun.com.apk",
+      app: "/Users/naida/Downloads/org.mightyfrog.android.simplenotepad-1.8.4-APK4Fun.com.apk",
       "app-package": "org.mightyfrog.android.simplenotepad",
     }
 
