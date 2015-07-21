@@ -10,7 +10,7 @@ module.exports = {
       .sendKeys("New Note")
     .elementById("org.mightyfrog.android.simplenotepad:id/edit_body")
       .sendKeys("This is my new note")
-    .back()
+      .hideKeyboard()
     .back()
 
   }

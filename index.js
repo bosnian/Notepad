@@ -1,8 +1,11 @@
 require('colors')
 var wd = require("wd")
 
+var config = require('./config')
 
-var browser = require('./config').init()
+
+
+var browser = config.init()
 
 var addNote = require('./modules/add-note')
 var settings = require('./modules/settings')
