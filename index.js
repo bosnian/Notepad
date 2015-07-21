@@ -10,6 +10,9 @@ var settings = require('./modules/settings')
 
 browser
 .then(function(){
+  return addNote.newNote(browser)
+})
+.then(function(){
   return settings.changeConfirmDropboxSync(browser)
 })
 .fin(function(){

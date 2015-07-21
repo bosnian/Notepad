@@ -1,9 +1,17 @@
 module.exports = {
-  
+
   newNote : function(browser){
     return browser
-    .elementByName("New item Button").click()
-    .elementByXPath("//android.widget.ListView[1]/android.widget.LinearLayout[1]").click()
+    .elementById("org.mightyfrog.android.simplenotepad:id/add_new")
+      .click()
+    .elementById("android:id/title")
+      .click()
+    .elementById("org.mightyfrog.android.simplenotepad:id/edit_title")
+      .sendKeys("New Note")
+    .elementById("org.mightyfrog.android.simplenotepad:id/edit_body")
+      .sendKeys("This is my new note")
+    .back()
+    .back()
 
   }
 }
