@@ -12,7 +12,7 @@ if(fs.existsSync('./config.js')){
 }
 
 if(fs.existsSync('./bin/'+apkName)){
-  fs.writeFileSync("config.js", sourcePre+"./bin/"+apkName+sourcePost)
+  fs.writeFileSync("config.js", sourcePre+__dirname+"/bin/"+apkName+sourcePost)
   console.log("File found!")
   process.exit()
 }
