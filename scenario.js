@@ -18,6 +18,9 @@ browser
 .then(function(){
   return settings.changeConfirmDropboxSync(browser)
 })
+.then(function(){
+  return notes.setPassword(browser)
+})
 .fin(function(){
   return browser
     .sleep(2000)
