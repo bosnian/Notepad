@@ -2,9 +2,9 @@
   "name": "notepad",
   "version": "1.0.0",
   "description": "Dokumentacija",
-  "main": "start.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node start.js",
+    "start": "node setup.js && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/bosnian/Notepad#readme",
   "dependencies": {
+    "appium": "^1.4.8",
     "chai": "^3.2.0",
     "chai-as-promised": "^5.1.0",
     "colors": "^1.1.2",
-    "sleep": "^2.0.0",
     "wd": "^0.3.12"
   }
 }
