@@ -7,13 +7,13 @@ var config = require('./config')
 
 var browser = config.init()
 
-var addNote = require('./modules/notes')
+var notes = require('./modules/notes')
 var settings = require('./modules/settings')
 
 
 browser
 .then(function(){
-  return addNote.newNote(browser)
+  return notes.newNote(browser)
 })
 .then(function(){
   return settings.changeConfirmDropboxSync(browser)
