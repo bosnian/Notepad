@@ -7,7 +7,7 @@ var config = require('./config')
 
 var browser = config.init()
 
-var addNote = require('./modules/add-note')
+var addNote = require('./modules/notes')
 var settings = require('./modules/settings')
 
 
