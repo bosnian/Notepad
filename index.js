@@ -19,7 +19,7 @@ setTimeout(function(){
   console.log("Starting scenario...")
   client = exec("node scenario.js",function (error, stdout, stderr) {
     if (error !== null) {
-      console.log('exec error: ' + error)
+      console.log('exec error: ' + JSON.stringify(error))
     }
     server.kill("SIGTERM")
   })
