@@ -1,6 +1,6 @@
 Documentation
 
-MikroFramework for black box automated testing.
+Micro Framework for black box automated testing.
 
 
 First clone repo:
